@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  color: #272525;
+}
+
+.black-screen {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-color: #272525;
+  opacity: 0.5;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.home {
+  width: 100vw;
+  padding: 0 0.5rem;
+}
+
+main {
+  margin: 1.5rem 0.5rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 3rem;
+  width: 100vw;
+}
+
+.logo {
+  width: 2.5rem;
+  align-self: center;
+  margin-left: 0.5rem;
+}
+
+nav {
+  display: flex;
+  position: relative;
+  width: 16rem;
+  justify-content: flex-end;
+}
+
+.button-menu {
+  position: absolute;
+  z-index: 1;
+  width: 2.3rem;
+  top: 15%;
+  right: 9%;
+  cursor: pointer;
+}
+
+.ul-list {
+  right: 0;
+  padding: 7rem 1rem;
+  position: absolute;
+  flex-direction: column;
+  gap: 1.3rem;
+  list-style: none;
+  width: 100%;
+  height: 100vh;
+  background-color: #fffdfa;
+}
+
+ul li {
+  width: fit-content;
+}
+
+.ul-list li:hover {
+  color: #e9ab53;
+  cursor: pointer;
+}
+
+picture img {
+  width: 100%;
+}
+
+.h1-readmore {
+  font-size: 2.5rem;
+  font-weight: 800;
+  max-width: 80%;
+  min-width: 17rem;
+  line-height: 2.5rem;
+  margin: 1rem 0;
+}
+
+.p-readmore {
+  line-height: 1.5rem;
+}
+
+.button-read-more {
+  background-color: #f15e50;
+  color: #1b1a1a;
+  font-weight: 700;
+  font-size: large;
+  letter-spacing: 2px;
+  height: 3.5rem;
+  width: 12rem;
+  border: none;
+  margin: 1rem 0;
+  cursor: pointer;
+}
+
+.news-section {
+  margin: 3rem 0;
+}
+
+.container-news {
+  padding: 1rem 1rem 0 1rem;
+  background-color: #00001a;
+  color: #fffdfa;
+  margin-bottom: 3rem;
+}
+
+.container-news h1 {
+  font-size: 2.3rem;
+  margin-bottom: 1rem;
+  color: #e9ab53;
+}
+
+.news-info {
+  border-bottom: 1px solid whitesmoke;
+  padding: 1rem 0;
+}
+
+.news-info h2 {
+  font-size: 1.3rem;
+}
+
+.news-info p {
+  font-size: 1.1rem;
+  font-weight: 100;
+  margin: 0.7rem 0;
+}
+
+.news-info:last-child {
+  border: none;
+}
+
+.itens-footer {
+  display: flex;
+  margin-bottom: 3rem;
+}
+
+.itens-footer img {
+  width: 32%;
+}
+
+.itens-list {
+  display: flex;
+  flex-direction: column;
+  padding-left: 1rem;
+  gap: 1rem;
+}
+
+.itens-list h1 {
+  font-weight: 800;
+  color: #f15e50;
+}
+
+.itens-list h3 {
+  font-weight: 900;
+  font-size: larger;
+}
+
+.itens-list p {
+  line-height: 1.7rem;
+}
+
+footer {
+  padding: 0.5rem;
+}
+
+@media (min-width:1300px) {
+  .container {
+    justify-content: center;
+  }
+
+  .button-menu {
+    display: none;
+  }
+
+  nav {
+    width: 0;
+  }
+
+  .ul-list {
+    display: flex !important;
+    right: -2.5%;
+    width: 100%;
+    padding: 0;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+    height: 100%;
+    background-color: none;
+  }
+
+  .home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+  }
+
+  header {
+    margin: 2.5rem 0 1rem 0;
+    width: 77rem;
+    padding-right: 1rem;
+  }
+
+  main {
+    display: flex;
+    width: 76rem;
+    justify-content: center;
+
+  }
+
+  .article-area {
+    max-width: 50rem;
+  }
+
+  .container-title-readmore {
+    display: flex;
+    height: 13rem;
+  }
+
+  .div-readmore {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-top: 1rem;
+    width: 52%;
+  }
+
+  .h1-readmore {
+    display: flex;
+    align-items: center;
+    font-size: 3.3rem;
+    line-height: 3.3rem;
+    min-width: 21rem;
+    width: 0;
+    margin: 0;
+  }
+
+  .p-readmore {
+    font-size: medium;
+    line-height: 1.8rem;
+  }
+
+  .button-read-more {
+    height: 3rem;
+    margin: 0;
+    justify-self: end;
+  }
+
+  .container-news {
+    padding: 2rem 1.1rem 0 1.1rem;
+    margin-left: 1.5rem;
+    width: 92%;
+  }
+
+  .news-section {
+    margin: 0;
+  }
+
+  picture img {
+    height: 55%;
+  }
+
+  .news-info {
+    border-bottom: 1px solid whitesmoke;
+    padding: 1rem 0;
+  }
+
+  .news-info p {
+    font-size: 1.1rem;
+    font-weight: 100;
+    margin: 0.7rem 0;
+    line-height: 2rem;
+  }
+
+  footer {
+    display: flex;
+    gap: 1rem;
+    width: 77rem;
+  }
+
+  .itens-footer {
+    display: flex;
+    height: 11rem;
+  }
+
+  .itens-footer p {
+    font-size: medium;
+    width: 15rem;
+  }
+
+  .itens-footer img {
+    width: fit-content;
+  }
+}
