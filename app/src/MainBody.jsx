@@ -1,3 +1,6 @@
+import bannerDesk from "/bannerDesk.jpg";
+import bannerMobile from "/bannerMobile.jpg";
+
 export default function MainBody() {
   const newsInfo = [
     {
@@ -22,8 +25,8 @@ export default function MainBody() {
       <main>
         <section className="article-area">
           <picture>
-            <source srcset="/bannerMobile.jpg" media="(max-width:800px)" />
-            <img src="/bannerDesk.jpg" alt="" />
+            <source srcset={bannerMobile} media="(max-width:800px)" />
+            <img src={bannerDesk} alt="" />
           </picture>
           <div className="container-title-readmore">
             <h1 className="h1-readmore">O Brilhante Futuro da <br/> Web 3.0?</h1>

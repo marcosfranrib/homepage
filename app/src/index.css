@@ -37,7 +37,7 @@ header {
   display: flex;
   justify-content: space-between;
   height: 3rem;
-  width: 100vw;
+  width: 100%;
 }
 
 .logo {
@@ -58,12 +58,12 @@ nav {
   z-index: 1;
   width: 2.3rem;
   top: 15%;
-  right: 9%;
+  right: 3%;
   cursor: pointer;
 }
 
 .ul-list {
-  right: 0;
+  right: -2%;
   padding: 7rem 1rem;
   position: absolute;
   flex-direction: column;
